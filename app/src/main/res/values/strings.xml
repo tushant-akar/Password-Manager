@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Password Manager</string>
+    <string name="very_weak">Very weak</string>
+    <string name="weak">Weak</string>
+    <string name="fair">Fair</string>
+    <string name="good">Good</string>
+    <string name="strong">Strong</string>
+</resources>
