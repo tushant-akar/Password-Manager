@@ -26,7 +26,7 @@ class MainActivity : FragmentActivity() {
     private lateinit var promptInfo: BiometricPrompt.PromptInfo
     private lateinit var keyguardManager: KeyguardManager
     private val database by lazy { PasswordDatabase.getDatabase(applicationContext) }
-    private val repository by lazy { PasswordRepository(database.passwordDao()) }
+    private val repository by lazy { PasswordRepository(database.passwordDao(), applicationContext) }
     private val viewModelFactory by lazy { PasswordViewModelFactory(repository) }
     private val viewModel by lazy { ViewModelProvider(this, viewModelFactory)[PasswordViewModel::class.java] }
 

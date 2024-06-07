@@ -7,7 +7,6 @@ import androidx.lifecycle.map
 import com.tushant.passwordmanager.db.PasswordDao
 import com.tushant.passwordmanager.model.Password
 import com.tushant.passwordmanager.utils.EncryptionUtils
-import java.lang.Exception
 import javax.crypto.SecretKey
 
 class PasswordRepository(private val passwordDao: PasswordDao, private val context: Context) {
